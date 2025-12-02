@@ -1,0 +1,122 @@
+body.enrollment-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #047e1983, #0b8a35);}
+
+.enrollment-container {
+  display: flex;
+  flex: 1;
+  height: calc(100vh - 80px);
+}
+
+.enroll-left {
+  flex: 1;
+  background: linear-gradient(135deg, #047e1983, #0b8a35);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+}
+
+.enroll-logo img { width: 10px; margin-bottom: 10px; }
+
+.enroll-logo h2 { font-weight: 600; margin-bottom: 10px; }
+
+.tagline { font-size: 1.6em; font-weight: 600; margin: 10px 0; }
+
+.subtext { font-size: 1em; opacity: 0.9; }
+
+.enroll-form {
+  flex: 1;
+  background: rgba(198, 230, 201, 0.521);
+  padding: 30px;
+  border-radius: 0 0 0 20px;
+  box-shadow: -4px 0 15px rgba(0,0,0,0.1);
+  overflow-y: auto;
+}
+
+.enroll-form h2 { color: #000; text-align: center; margin-bottom: 20px; }
+
+.enroll-form form { display: flex; flex-direction: column; }
+
+.enroll-form input,
+.enroll-form select {
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #085808;
+  font-size: 1em;
+}
+
+.enroll-form input:focus,
+.enroll-form select:focus { border-color: #e7e7e7; outline: none; }
+
+.enroll-form button {
+  background: #2d6b24;
+  color: white;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.enroll-form button:hover { background: #24ca15d3; transform: scale(1.03); }
+
+@media (max-width: 900px) {
+  .enrollment-container { flex-direction: column; }
+  .enroll-left, .enroll-form { width: 100%; border-radius: 0; }
+}
+
+
+body.dashboard-body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #a8d08d, #f4f6fc);
+}
+
+/* ===== HEADER ===== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background: linear-gradient(90deg, #85dd5c, #35b303);
+    color: #fffdfd;
+    flex-wrap: wrap;
+}
+
+header.logo {
+    width: 100px;
+    height: 1px;
+    margin-right: 15px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+      padding: 10px 30px;
+}
+
+.header-right .header-btn {
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: #00ad17;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.header-right .header-btn.logout {
+    background: #e74c3c;
+}
+
+.header-right .header-btn:hover {
+    background: #008e12;
+}
